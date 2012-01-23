@@ -13,7 +13,10 @@ namespace WindsorDemo
 			
 			var productService = container.Resolve<IProductService>();
 			var products = productService.Search ("shirt");
-			Console.WriteLine ("Products: {0}", products.Count);
+			
+			Console.WriteLine ("<--- Products --->");
+			foreach(var product in products)
+				Console.WriteLine (product.Name);
 		}
 	}
 }
