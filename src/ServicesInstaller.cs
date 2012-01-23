@@ -12,7 +12,8 @@ namespace WindsorDemo
 			container.Register(
 				Component.For<IProductService>().ImplementedBy(typeof(ProductService)),
 				Component.For<INewtonSoftService>().ImplementedBy(typeof(NewtonSoftService)),
-				Component.For<ISatchmoProductService>().ImplementedBy(typeof(SatchmoProductService))
+				Component.For<ISatchmoProductService>().ImplementedBy(typeof(SatchmoProductService)),
+				Component.For<DemoApp>().ImplementedBy(typeof(DemoApp))
 			);
 		}
 	}

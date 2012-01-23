@@ -8,14 +8,28 @@ namespace WindsorDemo
 	{
 		public static void Main (string[] args)
 		{
-			var container = new WindsorContainer();
-			container.Install(new ServicesInstaller());
+			var container = new WindsorContainer ();
+			container.Install (new ServicesInstaller ());
 			
-			var productService = container.Resolve<IProductService>();
-			var products = productService.Search ("shirt");
+			container.Resolve<DemoApp> ().Run ();
+		}
+	}
+	
+	class DemoApp
+	{
+		private readonly IProductService _productService;
+		
+		public DemoApp (IProductService productService)
+		{
+			_productService = productService;
+		}
+		
+		public void Run ()
+		{
+			var products = _productService.Search ("shirt");
 			
 			Console.WriteLine ("<--- Products --->");
-			foreach(var product in products)
+			foreach (var product in products)
 				Console.WriteLine (product.Name);
 		}
 	}
