@@ -1,20 +1,12 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Behaviors/ProductService.cs">
-    <Files>
-      <File FileName="Main.cs" Line="7" Column="17" />
-      <File FileName="Behaviors/ProductService.cs" Line="4" Column="22" />
-      <File FileName="Behaviors/NewtonSoftService.cs" Line="1" Column="1" />
-      <File FileName="ServicesInstaller.cs" Line="7" Column="2" />
-    </Files>
+  <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
         <State expanded="True">
           <Node name="Windsor-Demo" expanded="True">
-            <Node name="References" expanded="True" />
-            <Node name="Behaviors" expanded="True">
-              <Node name="ProductService.cs" selected="True" />
-            </Node>
+            <Node name="Services" expanded="True" />
+            <Node name="Main.cs" selected="True" />
           </Node>
         </State>
       </Pad>
