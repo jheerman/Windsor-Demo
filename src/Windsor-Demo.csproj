@@ -38,25 +38,25 @@
     <Reference Include="Castle.Windsor">
       <HintPath>..\lib\Castle.Windsor.dll</HintPath>
     </Reference>
-    <Reference Include="Newtonsoft.Json.MonoDroid">
-      <HintPath>..\lib\Newtonsoft.Json.MonoDroid.dll</HintPath>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\lib\Newtonsoft.Json.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Main.cs" />
     <Compile Include="AssemblyInfo.cs" />
     <Compile Include="Models\Product.cs" />
-    <Compile Include="Behaviors\IProductService.cs" />
-    <Compile Include="Behaviors\ProductService.cs" />
-    <Compile Include="Behaviors\ISatchmoProductService.cs" />
-    <Compile Include="Behaviors\SatchmoProductService.cs" />
     <Compile Include="ServicesInstaller.cs" />
-    <Compile Include="Behaviors\INewtonSoftService.cs" />
-    <Compile Include="Behaviors\NewtonSoftService.cs" />
+    <Compile Include="Services\IProductService.cs" />
+    <Compile Include="Services\ProductService.cs" />
+    <Compile Include="Services\ISatchmoProductService.cs" />
+    <Compile Include="Services\SatchmoProductService.cs" />
+    <Compile Include="Services\INewtonSoftService.cs" />
+    <Compile Include="Services\NewtonSoftService.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
     <Folder Include="Models\" />
-    <Folder Include="Behaviors\" />
+    <Folder Include="Services\" />
   </ItemGroup>
 </Project>
